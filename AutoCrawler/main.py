@@ -135,7 +135,7 @@ class AutoCrawler:
             os.makedirs(path)
 
     @staticmethod
-    def get_keywords(keywords_file='keywords.txt'):
+    def get_keywords(keywords_file='AutoCrawler\keywords.txt'):
         # read search keywords from file
         with open(keywords_file, 'r', encoding='utf-8-sig') as f:
             text = f.read()
