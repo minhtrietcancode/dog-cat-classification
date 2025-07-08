@@ -116,11 +116,16 @@ class AutoCrawler:
             return default
 
     @staticmethod
-    def validate_image(path):
-        ext = imghdr.what(path)
-        if ext == 'jpeg':
-            ext = 'jpg'
-        return ext  # returns None if not valid
+    def validate_image(path):   
+        try:
+            with Image.open(path) as img:
+                # Get the format and convert to lowercase
+                ext = img.format.lower()
+                if ext == 'jpeg':
+                    ext = 'jpg'
+                return ext
+        except Exception:
+            return None  # returns None if not valid
 
     @staticmethod
     def make_dir(dirname):
