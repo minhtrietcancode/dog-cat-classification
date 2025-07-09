@@ -49,9 +49,9 @@ if __name__ == "__main__":
     base_output_dir = "train_test_data"
 
     # Define counts for each split
-    train_num = 100
-    val_num = 25
-    test_num = 25
+    train_num = 200
+    val_num = 50
+    test_num = 50
 
     print("Splitting Cat images...")
     split_data(
