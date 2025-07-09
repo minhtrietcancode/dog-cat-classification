@@ -142,11 +142,19 @@ Training deep learning models can be resource-intensive. It is **highly recommen
     files.download('evaluation/confusion_matrix_epoch_1.png') 
     ```
 
+## Trained Model Checkpoint
+
+The trained `dog_cat_classifier_best.pth` model, which is too large for direct GitHub hosting, can be downloaded from the following Google Drive link:
+
+[Download Trained Model from Google Drive](https://colab.research.google.com/drive/10_YAyNpqjxdOa4_CF6qcuByzKd56F4Fp?usp=sharing)
+
+Please download this file and place it into your `src/model/` directory before attempting to make predictions.
+
 ## Making Predictions
 
 To use your trained model to classify new images:
 
-1.  Ensure your trained model weights (`dog_cat_classifier_best.pth`) are located in the `src/model/` directory.
+1.  **Download the trained model checkpoint** (`dog_cat_classifier_best.pth`) from the link in the [Trained Model Checkpoint](#trained-model-checkpoint) section and place it into your `src/model/` directory.
 2.  Navigate to the `src/model/` directory in your terminal:
     ```bash
     cd src/model
